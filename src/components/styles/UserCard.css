@@ -1,0 +1,61 @@
+.user{
+    width: 100%;
+    max-width: 20em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px 3px #0002;
+    padding: 1.5em 1em 2em;
+    transition: scale 0.3s ease;
+    &:hover{
+        scale: 0.95;
+    }
+    .user_img{
+        width: 70%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto 2em;
+    }
+    .user_name{
+        font-size: 1.5em;
+    }
+    .user_hr{
+        margin: 0.5em 0;
+        border-color: #0001;
+    }
+    .user_list{
+        gap: 0.7em;
+        margin-bottom: 1.1em;
+        .user_item{
+            gap: 0.2em;
+        }
+        .user_label{
+            font-size: 1.2em;
+            padding-left: 1em;
+            color: #999;
+            text-transform: uppercase;
+        }
+        user_value{
+            font-size: 1.2em;
+        }
+    }
+    .user_footer{
+        gap: 1em;
+        .user_btn{
+            font-size: 1.5em;
+            width: 50%;
+            padding: 0.5em 0;
+            border-radius: .3em;
+            color:#fff;
+            transition: filter 3s ease;
+            &:hover{
+                filter: brightness(1.2);
+            }
+        }
+        .user_delete{
+            background-color: #f00;
+        }
+        .user_edit{
+            background-color: #999;
+        }
+    }
+}
